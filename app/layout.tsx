@@ -1,9 +1,5 @@
-'use client';
-import Link from 'next/link';
 import './globals.css';
 import { Inter } from 'next/font/google';
-import { usePathname } from 'next/navigation';
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'Create Next App',
@@ -11,37 +7,6 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const listMenuSidebar = [
-    {
-      name: 'Feed',
-      href: '/',
-    },
-    {
-      name: 'My community',
-      href: 'community',
-    },
-    {
-      name: 'Notification',
-      href: 'notification',
-    },
-    {
-      name: 'Explore',
-      href: 'explore',
-    },
-    {
-      name: 'Profile',
-      href: 'profile',
-    },
-    {
-      name: 'Settings',
-      href: 'setting',
-    },
-    {
-      name: 'Logout',
-      href: 'logout',
-    },
-  ];
-  const pathName = usePathname();
   return (
     <html lang="en">
       <body className="px-5">{children}</body>
