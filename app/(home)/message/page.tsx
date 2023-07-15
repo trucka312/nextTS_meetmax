@@ -1,8 +1,6 @@
 import React from 'react';
 
-type Props = {};
-
-const MessagePage = (props: Props) => {
+const MessagePage = () => {
   return <div>MessagePage</div>;
 };
 
