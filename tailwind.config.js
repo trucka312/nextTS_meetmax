@@ -19,11 +19,21 @@ module.exports = {
       colors: {
         bluePrimary: '#377dff',
         redPrimary: '#FF5630',
-        bluePrimary: '#377DFF',
+        bluePrimary: '#377DFF', // for over text, button, and icons has blue color
         //login with another app color button
         grayscaleGray: '#4E5D78',
         whiteColor: '#fff',
         blackColor: '#333',
+        textColorLightMode: '#4E5D78',
+        textColorNightMode: '#FFFFFF',
+        backgroundColorNightMode: '#191C21',
+        backgroundColorLightMode: '#FFFFFF',
+        textColorLightModeBlur: '#8A93A2',
+        textColorNightModeBlur: '#7B8492',
+        backgroundColorNightModeBlur: '#212833',
+        backgroundColorLightModeBlur: '#F4F5F6',
+        buttonBorderLightModeColor: '#F4F4F4',
+        buttonBorderNightModeColor: '#4E5D78',
       },
 
       fontWeight: {
