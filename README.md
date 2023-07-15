@@ -16,3 +16,9 @@ over view !!!
 ![Alt text](./public/image-1.png)
 
 ![Alt text](./public/image-2.png)
+## Built With
+
+- [Supabase](https://supabase.com)
+- [Tailwind CSS](https://tailwindcss.com)
+- [Next.js](https://nextjs.org)
+- [Vercel](https://vercel.com)

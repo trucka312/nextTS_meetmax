@@ -1,8 +1,6 @@
 import React from 'react';
 
-type Props = {};
-
-const NotificationPage = (props: Props) => {
+const NotificationPage = () => {
   return <div>NotificationPage</div>;
 };
 
