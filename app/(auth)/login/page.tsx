@@ -2,8 +2,10 @@ import React from 'react';
 
 type Props = {};
 
+// mobile frist
+
 const LoginPage = (props: Props) => {
-  return <div>LoginPage</div>;
+  return <div></div>;
 };
 
 export default LoginPage;
