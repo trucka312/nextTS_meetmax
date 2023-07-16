@@ -1,7 +1,11 @@
 //config reducers
 import { combineReducers } from 'redux';
 import { createReducer, PayloadAction } from 'typesafe-actions';
-import { getUsersRequest, getUsersSuccess, getUsersFailure } from './actions';
+import {
+  getUsersRequest,
+  getUsersSuccess,
+  getUsersFailure,
+} from '../actions/actions';
 
 export interface User {
   id: number;
@@ -22,9 +26,14 @@ const initialState: AppState = {
 };
 
 const users = createReducer(initialState.users)
-.handleAction(getUsersSuccess, (state: AppState['users'], action: PayloadAction<'GET_USERS_SUCCESS', { users: User[] }>) => action.payload.users)
-.handleAction(getUsersFailure, () => initialState.users);
-  
+  .handleAction(
+    getUsersSuccess,
+    (
+      state: AppState['users'],
+      action: PayloadAction<'GET_USERS_SUCCESS', { users: User[] }>,
+    ) => action.payload.users,
+  )
+  .handleAction(getUsersFailure, () => initialState.users);
 
 const loading = createReducer(initialState.loading)
   .handleAction(getUsersRequest, () => true)

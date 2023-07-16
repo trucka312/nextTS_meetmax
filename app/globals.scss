@@ -1,0 +1,21 @@
+@import '/styles/reset';
+@import '/styles/variables';
+@import '/styles/mixins';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+@media (max-width: 419px) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+// 100% : 1rem = 16px
+// 62.5% : 1rem = 10px

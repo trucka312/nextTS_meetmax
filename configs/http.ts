@@ -14,11 +14,3 @@ class Http {
 
 const http: AxiosInstance = new Http().instance;
 export default http;
-
-
-
-
-
-
-
-
